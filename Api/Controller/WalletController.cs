@@ -11,6 +11,7 @@ public class WalletController : ControllerBase
     public async Task<IActionResult> GetBalance()
     {
         // TODO: Implementar consulta de saldo
+        
         return Ok();
     }
 
