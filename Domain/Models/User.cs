@@ -7,13 +7,13 @@ public class User
     public int Id { get; set; }
 
     [Required]
-    public string FullName { get; set; }
+    public required string FullName { get; set; }
 
     [Required, EmailAddress]
-    public string Email { get; set; }
+    public required string Email { get; set; }
 
     [Required]
-    public string PasswordHash { get; set; }
+    public required string PasswordHash { get; set; }
 
-    public Wallet Wallet { get; set; }
+    public Wallet? Wallet { get; set; }
 }

@@ -1,18 +1,18 @@
 version: '3.8'
 
 services:
-  postgres:
+  db:
     image: postgres:15
     container_name: postgres_wallet
     restart: always
     environment:
-      POSTGRES_DB: wallet_db
+      POSTGRES_DB: walletapi
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: sua_senha_segura
+      POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  pgdata:
+  postgres_data:

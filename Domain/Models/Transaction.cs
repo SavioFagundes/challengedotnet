@@ -14,6 +14,6 @@ public class Transaction
     public decimal Amount { get; set; }
     public DateTime Timestamp { get; set; } = DateTime.UtcNow;
     
-    public Wallet FromWallet { get; set; }
-    public Wallet ToWallet { get; set; }
+    public Wallet? FromWallet { get; set; }
+    public Wallet? ToWallet { get; set; }
 }

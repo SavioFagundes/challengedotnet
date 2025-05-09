@@ -2,7 +2,7 @@ using WalletAPI.Application.Dtos.Transaction;
 using WalletAPI.Domain.Models;
 
 namespace WalletAPI.Domain.Interfaces.Services;
-
+ 
 public interface ITransactionService
 {
     Task<Transaction> CreateTransactionAsync(int fromUserId, CreateTransactionDto transactionDto);
