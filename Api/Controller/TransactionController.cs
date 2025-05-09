@@ -11,7 +11,6 @@ public class TransactionController : ControllerBase
     public async Task<IActionResult> CreateTransaction(CreateTransactionDto createTransactionDto)
     {
         // TODO: Implementar criação de transação
-        var transation = 
         return Ok();
     }
 
