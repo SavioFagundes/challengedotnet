@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace WalletAPI.Models;
+namespace WalletAPI.Domain.Models;
 
 public class Transaction
 {

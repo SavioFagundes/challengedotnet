@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using WalletAPI.Data;
+using WalletAPI.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
